@@ -25,9 +25,9 @@ module.exports = {
    * 根据不同的目录名称，打包生成目标 js，名称和目录名一致
    */
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "build"),
     filename: "[name].js",
-    publicPath: "/dist/"
+    publicPath: "/build/"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]

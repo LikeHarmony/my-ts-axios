@@ -13,6 +13,10 @@ router.get('/api/base/get', function(req,res) {
   })
 })
 
+router.get('/api/handleRequestURL/get', function(req, res) {
+  res.json(req.query)
+})
+
 app.use(router)
 
 const port = process.env.PORT || 3000
