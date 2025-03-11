@@ -17,6 +17,11 @@ router.get('/api/handleRequestURL/get', function(req, res) {
   res.json(req.query)
 })
 
+router.post('/api/handleRequestBody/post', function(req, res) {
+  res.json(req.body)
+})
+
+
 app.use(router)
 
 const port = process.env.PORT || 3000
